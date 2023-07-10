@@ -246,7 +246,7 @@ const products = ref([
     image: '/img/bg1.jpg'
   },
   {
-    title: 'Лор операция',
+    title: 'Лор операциo',
     subtitle: 'Лучшие лор хирурги',
     link: 'Узнайне подробнее >>',
     image: '/img/bg2.jpg'

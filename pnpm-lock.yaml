@@ -78,8 +78,8 @@ devDependencies:
     specifier: ^4.2.3
     version: 4.2.3(vite@4.3.9)(vue@3.3.4)
   '@vitest/ui':
-    specifier: ^0.32.2
-    version: 0.32.2(vitest@0.32.2)
+    specifier: ^0.33.0
+    version: 0.33.0(vitest@0.32.2)
   '@vueuse/nuxt':
     specifier: ^10.2.0
     version: 10.2.0(nuxt@3.5.3)(vue@3.3.4)
@@ -106,7 +106,7 @@ devDependencies:
     version: 5.1.3
   vitest:
     specifier: ^0.32.2
-    version: 0.32.2(@vitest/ui@0.32.2)(jsdom@22.1.0)(sass@1.63.4)
+    version: 0.32.2(@vitest/ui@0.33.0)(jsdom@22.1.0)(sass@1.63.4)
 
 packages:
 
@@ -1140,8 +1140,8 @@ packages:
     engines: {node: '>= 14'}
     dev: true
 
-  /@intlify/shared@9.3.0-beta.20:
-    resolution: {integrity: sha512-RucSPqh8O9FFxlYUysQTerSw0b9HIRpyoN1Zjogpm0qLiHK+lBNSa5sh1nCJ4wSsNcjphzgpLQCyR60GZlRV8g==}
+  /@intlify/shared@9.3.0-beta.24:
+    resolution: {integrity: sha512-AKxJ8s7eKIQWkNaf4wyyoLRwf4puCuQgjSChlDJm5JBEt6T8HGgnYTJLRXu6LD/JACn3Qwu6hM/XRX1c9yvjmQ==}
     engines: {node: '>= 16'}
     dev: true
 
@@ -1165,7 +1165,7 @@ packages:
       '@rollup/pluginutils': 5.0.2(rollup@3.25.1)
       '@vue/compiler-sfc': 3.3.4
       debug: 4.3.4
-      fast-glob: 3.2.12
+      fast-glob: 3.3.0
       js-yaml: 4.1.0
       json5: 2.2.3
       pathe: 1.1.1
@@ -1244,6 +1244,13 @@ packages:
   /@istanbuljs/schema@0.1.3:
     resolution: {integrity: sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==}
     engines: {node: '>=8'}
+    dev: true
+
+  /@jest/schemas@29.6.0:
+    resolution: {integrity: sha512-rxLjXyJBTL4LQeJW3aKo0M/+GkCOXsO+8i9Iu7eDb6KwtP65ayoDsitrdPBtujxQ88k4wI2FNYfa6TOGwSn6cQ==}
+    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+    dependencies:
+      '@sinclair/typebox': 0.27.8
     dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -1709,7 +1716,7 @@ packages:
       ofetch: 1.1.0
       pathe: 1.1.1
       ufo: 1.1.2
-      vitest: 0.32.2(@vitest/ui@0.32.2)(jsdom@22.1.0)(sass@1.63.4)
+      vitest: 0.32.2(@vitest/ui@0.33.0)(jsdom@22.1.0)(sass@1.63.4)
       vue: 3.3.4
     transitivePeerDependencies:
       - rollup
@@ -1891,7 +1898,7 @@ packages:
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     dependencies:
       cross-spawn: 7.0.3
-      fast-glob: 3.2.12
+      fast-glob: 3.3.0
       is-glob: 4.0.3
       open: 9.1.0
       picocolors: 1.0.0
@@ -2138,6 +2145,10 @@ packages:
       tuf-js: 1.1.7
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@sinclair/typebox@0.27.8:
+    resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
     dev: true
 
   /@socket.io/component-emitter@3.1.0:
@@ -2770,7 +2781,7 @@ packages:
       chokidar: 3.5.3
       colorette: 2.0.20
       consola: 3.1.0
-      fast-glob: 3.2.12
+      fast-glob: 3.3.0
       magic-string: 0.30.0
       pathe: 1.1.1
       perfect-debounce: 1.0.0
@@ -2837,7 +2848,7 @@ packages:
       '@unocss/config': 0.53.1
       '@unocss/core': 0.53.1
       css-tree: 2.3.1
-      fast-glob: 3.2.12
+      fast-glob: 3.3.0
       magic-string: 0.30.0
       postcss: 8.4.24
     dev: true
@@ -2952,7 +2963,7 @@ packages:
       '@unocss/scope': 0.53.1
       '@unocss/transformer-directives': 0.53.1
       chokidar: 3.5.3
-      fast-glob: 3.2.12
+      fast-glob: 3.3.0
       magic-string: 0.30.0
       vite: 4.3.9(@types/node@20.3.1)(sass@1.63.4)
     transitivePeerDependencies:
@@ -2969,7 +2980,7 @@ packages:
       '@unocss/config': 0.53.1
       '@unocss/core': 0.53.1
       chokidar: 3.5.3
-      fast-glob: 3.2.12
+      fast-glob: 3.3.0
       magic-string: 0.30.0
       unplugin: 1.3.1
       webpack: 5.87.0
@@ -3057,19 +3068,19 @@ packages:
       tinyspy: 2.1.1
     dev: true
 
-  /@vitest/ui@0.32.2(vitest@0.32.2):
-    resolution: {integrity: sha512-N5JKftnB8qzKFtpQC5OcUGxYTLo6wiB/95Lgyk6MF52t74Y7BJOWbf6EFYhXqt9J0MSbhOR2kapq+WKKUGDW0g==}
+  /@vitest/ui@0.33.0(vitest@0.32.2):
+    resolution: {integrity: sha512-7gbAjLqt30R4bodkJAutdpy4ncv+u5IKTHYTow1c2q+FOxZUC9cKOSqMUxjwaaTwLN+EnDnmXYPtg3CoahaUzQ==}
     peerDependencies:
       vitest: '>=0.30.1 <1'
     dependencies:
-      '@vitest/utils': 0.32.2
-      fast-glob: 3.2.12
-      fflate: 0.7.4
+      '@vitest/utils': 0.33.0
+      fast-glob: 3.3.0
+      fflate: 0.8.0
       flatted: 3.2.7
       pathe: 1.1.1
       picocolors: 1.0.0
       sirv: 2.0.3
-      vitest: 0.32.2(@vitest/ui@0.32.2)(jsdom@22.1.0)(sass@1.63.4)
+      vitest: 0.32.2(@vitest/ui@0.33.0)(jsdom@22.1.0)(sass@1.63.4)
     dev: true
 
   /@vitest/utils@0.32.2:
@@ -3078,6 +3089,14 @@ packages:
       diff-sequences: 29.4.3
       loupe: 2.3.6
       pretty-format: 27.5.1
+    dev: true
+
+  /@vitest/utils@0.33.0:
+    resolution: {integrity: sha512-pF1w22ic965sv+EN6uoePkAOTkAPWM03Ri/jXNyMIKBb/XHLDPfhLvf/Fa9g0YECevAIz56oVYXhodLvLQ/awA==}
+    dependencies:
+      diff-sequences: 29.4.3
+      loupe: 2.3.6
+      pretty-format: 29.6.1
     dev: true
 
   /@vue-macros/common@1.4.0(vue@3.3.4):
@@ -5575,6 +5594,17 @@ packages:
       micromatch: 4.0.5
     dev: true
 
+  /fast-glob@3.3.0:
+    resolution: {integrity: sha512-ChDuvbOypPuNjO8yIDf36x7BlZX1smcUMTTcyoIjycexOxd6DFsKsg21qVBzEmr3G7fUKIRy2/psii+CIUt7FA==}
+    engines: {node: '>=8.6.0'}
+    dependencies:
+      '@nodelib/fs.stat': 2.0.5
+      '@nodelib/fs.walk': 1.2.8
+      glob-parent: 5.1.2
+      merge2: 1.4.1
+      micromatch: 4.0.5
+    dev: true
+
   /fast-json-stable-stringify@2.1.0:
     resolution: {integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==}
     dev: true
@@ -5603,8 +5633,8 @@ packages:
       web-streams-polyfill: 3.2.1
     dev: true
 
-  /fflate@0.7.4:
-    resolution: {integrity: sha512-5u2V/CDW15QM1XbbgS+0DfPxVB+jUKhWEKuuFuHncbk3tEEqzmoXL+2KyOFuKGqOnmdIy0/davWF1CkuwtibCw==}
+  /fflate@0.8.0:
+    resolution: {integrity: sha512-FAdS4qMuFjsJj6XHbBaZeXOgaypXp8iw/Tpyuq/w3XA41jjLHT8NPA+n7czH/DDhdncq0nAyDZmPeWXh2qmdIg==}
     dev: true
 
   /figures@5.0.0:
@@ -6027,7 +6057,7 @@ packages:
     dependencies:
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.2.12
+      fast-glob: 3.3.0
       ignore: 5.2.4
       merge2: 1.4.1
       slash: 3.0.0
@@ -8599,7 +8629,7 @@ packages:
     hasBin: true
     dependencies:
       ansi-colors: 4.1.3
-      fast-glob: 3.2.12
+      fast-glob: 3.3.0
       js-yaml: 4.1.0
       supports-color: 9.3.1
       undici: 5.22.1
@@ -9296,6 +9326,15 @@ packages:
       react-is: 17.0.2
     dev: true
 
+  /pretty-format@29.6.1:
+    resolution: {integrity: sha512-7jRj+yXO0W7e4/tSJKoR7HRIHLPPjtNaUGG2xxKQnGvPNRkgWcQ0AZX6P4KBRJN4FcTBWb3sa7DVUJmocYuoog==}
+    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+    dependencies:
+      '@jest/schemas': 29.6.0
+      ansi-styles: 5.2.0
+      react-is: 18.2.0
+    dev: true
+
   /primeflex@3.3.1:
     resolution: {integrity: sha512-zaOq3YvcOYytbAmKv3zYc+0VNS9Wg5d37dfxZnveKBFPr7vEIwfV5ydrpiouTft8MVW6qNjfkaQphHSnvgQbpQ==}
     dev: false
@@ -9546,6 +9585,10 @@ packages:
 
   /react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
+    dev: true
+
+  /react-is@18.2.0:
+    resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: true
 
   /read-cache@1.0.0:
@@ -10885,7 +10928,7 @@ packages:
     dependencies:
       '@rollup/pluginutils': 5.0.2(rollup@3.25.1)
       escape-string-regexp: 5.0.0
-      fast-glob: 3.2.12
+      fast-glob: 3.3.0
       local-pkg: 0.4.3
       magic-string: 0.30.0
       mlly: 1.3.0
@@ -11020,7 +11063,7 @@ packages:
       '@vue-macros/common': 1.4.0(vue@3.3.4)
       ast-walker-scope: 0.4.2
       chokidar: 3.5.3
-      fast-glob: 3.2.12
+      fast-glob: 3.3.0
       json5: 2.2.3
       local-pkg: 0.4.3
       mlly: 1.3.0
@@ -11324,7 +11367,7 @@ packages:
       chokidar: 3.5.3
       commander: 8.3.0
       eslint: 8.43.0
-      fast-glob: 3.2.12
+      fast-glob: 3.3.0
       fs-extra: 11.1.1
       lodash.debounce: 4.0.8
       lodash.pick: 4.4.0
@@ -11412,7 +11455,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest@0.32.2(@vitest/ui@0.32.2)(jsdom@22.1.0)(sass@1.63.4):
+  /vitest@0.32.2(@vitest/ui@0.33.0)(jsdom@22.1.0)(sass@1.63.4):
     resolution: {integrity: sha512-hU8GNNuQfwuQmqTLfiKcqEhZY72Zxb7nnN07koCUNmntNxbKQnVbeIS6sqUgR3eXSlbOpit8+/gr1KpqoMgWCQ==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -11450,7 +11493,7 @@ packages:
       '@vitest/runner': 0.32.2
       '@vitest/snapshot': 0.32.2
       '@vitest/spy': 0.32.2
-      '@vitest/ui': 0.32.2(vitest@0.32.2)
+      '@vitest/ui': 0.33.0(vitest@0.32.2)
       '@vitest/utils': 0.32.2
       acorn: 8.9.0
       acorn-walk: 8.2.0
@@ -11598,7 +11641,7 @@ packages:
       vue-router:
         optional: true
     dependencies:
-      '@intlify/shared': 9.3.0-beta.20
+      '@intlify/shared': 9.3.0-beta.24
       '@intlify/vue-i18n-bridge': 0.8.0(vue-i18n@9.3.0-beta.17)
       '@intlify/vue-router-bridge': 0.8.0(vue@3.3.4)
       ufo: 1.1.2

@@ -48,6 +48,9 @@ button {
   background: white;
   border: none;
 }
+.pi-search:hover{
+  color: #5bbdbe;
+}
 
 .p-button.p-button-secondary.p-button-text:enabled:hover, .p-buttonset.p-button-secondary > .p-button.p-button-text:enabled:hover, .p-splitbutton.p-button-secondary > .p-button.p-button-text:enabled:hover{
   background-color: #dedede;
@@ -118,20 +121,29 @@ button {
 .p-carousel .p-carousel-content  .p-carousel-next:hover, .p-carousel-content .p-carousel-prev:hover{
   background: rgba(106, 113, 236, 0.8) !important;
 }
-.btn-primary{
-  color: #5e74b7 !important;
-  background-color: transparent !important;
-  background-image: none !important;
-  border-color: #5e74b7 !important;
-}
-.btn-primary:hover{
-  color: #fff !important;
-  background-color: #5e74b7 !important;
-  border-color: #5e74b7 !important;
-}
 
-.footer{
-  background-color: #364779;
+.footer-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  .footer-icon{
+    height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
 }
-
+@media screen and (max-width: 1200px) {
+  .navbar{
+    padding: 10px 0;
+  }
+  .p-menuitem{
+    display: none;
+  }
+  .p-menubar-button{
+    display: block !important;
+  }
+}
 

@@ -178,6 +178,1279 @@
         </template>
       </Carousel>
     </section>
+    <!-- list   -->
+    <section id="list" class="mt-8">
+      <div class="container">
+        <div class="grid ">
+          <div class="col-12 md:col-6  xl:col-3 scroll-hover">
+            <div class="flex line-scroll justify-content-center md:justify-content-start">
+              <img class="w-4rem" src="/layout/images/cardiogram.svg" alt="">
+              <h1 class="list-title ml-4">
+                ДИАГНОСТИКА
+              </h1>
+            </div>
+            <ul class="list-menu">
+              <h6 class="flex md:hidden text-1.2rem font-sans ml--6">
+                Исследования уха
+              </h6>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Тимпанометрия
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Аудиометрия
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Электрокохлеография
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden ">
+                <router-link class="list-link" to="">
+                  Исследование проходимости слуховой трубы
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link " to="">
+                  Отоскопия
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Камертональное исследование
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  КТ височной кости
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Диагностика вестибулярной функции
+                </router-link>
+              </li>
+              <h6 class="flex md:hidden text-1.2rem font-sans ml--6">
+                Исследования носа и пазух
+              </h6>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Эндоскопия носа
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  КТ пазух носа
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  КТ челюсти
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Риноскопия
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Диафаноскопия
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  УЗИ пазух носа
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Рентгенография пазух
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Зондирование пазух
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Диагностика дыхательной функции
+                </router-link>
+              </li>
+              <h6 class="flex md:hidden text-1.2rem font-sans ml--6">
+                Исследования глотки, гортани
+              </h6>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Пальпация
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Ларингоскопия
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Рентгенография гортани
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Диагностика голосовой функции
+                </router-link>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 md:col-6  xl:col-3 scroll-hover">
+            <div class="flex line-scroll justify-content-center md:justify-content-start">
+              <img class="w-4rem" src="/layout/images/syringe.svg" alt="">
+              <h1 class="list-title ml-4">
+                ПРОЦЕДУРЫ
+              </h1>
+            </div>
+            <ul class="list-menu">
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Промывание носа
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Пункция пазух
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Ямик
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Промывание миндалин
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Удаление серной пробки
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Лазеротерапия
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Магнитотерапия
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Фонофорез
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Электрофорез
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Промывание уха
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Тампонада носа
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Прижигание слизистой носа
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Удаление инородных тел из носа
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Милта
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Кварц
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Соляная пещера
+                </router-link>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 md:col-6  xl:col-3 scroll-hover">
+            <div class="flex line-scroll justify-content-center md:justify-content-start">
+              <img class="w-4rem" src="/layout/images/blood-transfusion.svg" alt="">
+              <h1 class="list-title ml-4">
+                ОПЕРАЦИИ
+              </h1>
+            </div>
+            <ul class="list-menu">
+              <h6 class="flex md:hidden text-1.2rem font-sans ml--6">
+                Операции носа и пазух носа
+              </h6>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Удаление миндалин
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Удаление аденоидов
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Септопластика
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Вазотомия
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Полисинусотомия
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Удаление полипов
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Конхотомия носовых раковин
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Резекция носовой перегородки
+                </router-link>
+              </li>
+              <h6 class="flex md:hidden text-1.2rem font-sans ml--6">
+                Операция уха
+              </h6>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Стапедопластика
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Мирингопластика
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Тимпанопластика
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Мастоидопластика
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Шунтирование барабанной полости
+                </router-link>
+              </li>
+              <h6 class="flex md:hidden text-1.2rem font-sans ml--6">
+                Операции глотки и гортани
+              </h6>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Тонзиллэктомия
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Трахеостомия
+                </router-link>
+              </li>
+              <h6 class="flex md:hidden text-1.2rem font-sans ml--6">
+                Прочее
+              </h6>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Подготовка к операции
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Лор-хирурги
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Рассрочка по операциям
+                </router-link>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 md:col-6  xl:col-3 scroll-hover">
+            <div class="flex line-scroll justify-content-center md:justify-content-start">
+              <img class="w-4rem" src="/layout/images/hospital-1.svg" alt="">
+              <h1 class="list-title ml-4">
+                КЛИНИКА
+              </h1>
+            </div>
+            <ul class="list-menu">
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  О клинике
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Специалисты
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Цены
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Детский лор-врач
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Лор-врач на дом
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Оборудование
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Операционная
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Стационар
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Фото клиники
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Видео
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Контакты
+                </router-link>
+              </li>
+              <h6 class="flex md:hidden text-1.2rem font-sans ml--6">
+                Филиалы:
+              </h6>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  На "Цветном бульваре"
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  На "Преображенской площади"
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  На "Бульваре Дмитрия Донского"
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  На "Мичуринском проспекте"
+                </router-link>
+              </li>
+              <h6 class="flex md:hidden text-1.2rem font-sans ml--6">
+                Прочие направления
+              </h6>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Слухопротезирование
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Терапия
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Педиатрия
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  УЗИ сосудов
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  УЗИ сердца
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Неврология
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Мануальная терапия
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Аллергология-иммунология
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Кардиология
+                </router-link>
+              </li>
+              <h6 class="flex md:hidden text-1.2rem font-sans ml--6">
+                Пациентам:
+              </h6>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Контроль качества
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Отзывы о лор-клинике
+                </router-link>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <Button class="text-cyan-700 hover:bg-cyan-700 hover:text-white  text-xl border-noround mt-6 mb-8" label="Все услуги" severity="success" outlined />
+        <div>
+          <h1 class="main-title mb-15">
+            Лор-клиника
+          </h1>
+          <p class="main-description">
+            Клиника уха, горла и носа является современной специализированной лор-клиникой в Москве, способной оказывать своевременную высококвалифицированную медицинскую помощь пациентам с заболеваниями уха, горла и носа всех возрастных категорий, используя самые современные технологии.
+          </p>
+          <p class="main-description mt-5 mb-15">
+            В нашей клинике доступна востребованная услуга - <router-link class="main-description__link" to="">
+              реабилитация после ковида.
+            </router-link> Мы составили комплекс эффективных лечебных процедур, направленных на полнейшее восстановление всех ресурсов организма после перенесенной инфекции.
+          </p>
+          <p class="main-description mb-5">
+            Своевременное обращение к врачу поможет сохранить Ваше здоровье.
+            Не откладывайте лечение, звоните прямо сейчас. Мы работаем круглосуточно в Москве.
+          </p>
+          <p class="main-description mb-4">
+            тел.: <a class="text-2xl p-1 main-description__link" href="tel:8(495)266-28-73">8 (495) 266-28-73</a> (круглосуточно)
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- card doctor-->
+  <section class="bg-gray-100 pt-20">
+    <div class="container">
+      <h1 class="main-title mb-4">
+        Наши специалисты
+      </h1>
+      <div class="grid -ml-6">
+        <div v-for="el in cards" class="col-12 xl:col-6 mb-6 pl-6 " :key="el.id">
+          <div class=" card flex-column sm:flex-row flex p-4 bg-white w-full h-full">
+            <div class="card-animation-left" />
+            <div class="">
+              <img class="card-img" :src="el.img" alt="">
+            </div>
+            <div class="ml-4 mt-5 ">
+              <h1 class="card-name">
+                {{ el.name }}
+              </h1>
+              <div class="card-job-title">
+                <span>{{ el.expert }}</span>
+              </div>
+              <p class="main-description mt-4">
+                {{ el.profession }}
+              </p>
+              <div class="main-description main-description--bg-hover">
+                <p>
+                  стаж: <b>{{ el.experience }}</b>
+                </p>
+                <div class="rectangle"></div>
+              </div>
+              <div class="card-animation-right" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-content-center">
+        <Button class="border-noround mr-3 border-0 p-tag-primary bg-cyan-700 hover:bg-cyan-600 text-xl" label="Задать вопрос врачу" />
+        <Button class="border-noround ml-5 text-blue-700 hover:bg-blue-700 hover:text-white text-xl" label="Все специалисты" severity="success" outlined />
+      </div>
+      <p class="main-description mt-5 pb-6">
+        <router-link class="main-description__link" to="">
+          Наши лор-врачи
+        </router-link> имеют огромный и уникальный опыт лечения лор-заболеваний, как взрослых пациентов, так и детей. У нас работает высокопрофессиональная команда отоларингологов высшей квалификационной категории, ринохирургов и отохирургов, в том числе 40% наших врачей имеют ученую степень кандидата медицинских наук. Наши специалисты ежедневно решают сложнейшие задачи и проводят уникальные <router-link class="main-description__link" to="">
+          хирургические операции
+        </router-link> лор-органов.
+      </p>
+    </div>
+  </section>
+  <!-- about as -->
+  <section>
+    <div class="container">
+      <div class="w-full md:w-8">
+        <h1 class="main-title mt-8 mb-5">
+          Современное оборудование
+        </h1>
+        <p class="main-description mb-6">
+          Мы оснащены современным оборудованием, которое позволяет проводить качественную диагностику заболеваний уха, горла и носа, в том числе эндоскопический осмотр лор-органов, УЗИ пазух носа, <router-link class="main-description__link" to="">
+            КТ пазух носа,
+          </router-link> аудиометрию и многое другое. Качественная диагностика пациентов является ключевым фактором эффективного лечения, позволяет выявлять лор-патологии на ранней стадии и проводить своевременное и эффективное лечение.
+        </p>
+        <div class="w-full md:w-800px">
+          <img class="w-full" src="/layout/images/equipment.jpg" alt="equipment">
+        </div>
+        <h1 class="main-title mb-5">
+          Детский лор
+        </h1>
+        <p class="main-description mb-8">
+          Профилактика и <span class="text-black font-normal">лечение лор-заболеваний у детей</span> является одним из наших основных профилей деятельности. Клиника приспособлена для приема самых маленьких пациентов, современное медицинское оборудование оснащено специальными средствами для оказания медицинской помощи детям (например, специальные детские насадки для эндоскопического оборудования и т.п.). <router-link class="main-description__link" to="">
+            Детские лор-врачи
+          </router-link> клиники имеют огромный опыт лечения детей всех возрастных категорий, обладают специальными навыками общения с детьми и способны оказать своевременную и высококвалифицированную медицинскую помощь, учитывая возрастные особенности диагностики и лечения ребенка.
+        </p>
+        <h1 class="main-title mb-5">
+          Лор-врач круглосуточно
+        </h1>
+        <p class="main-description mb-8">
+          Клиника уха, горла и носа работает 24 часа в сутки 7 дней в неделю. Наш филиал на "Цветном бульваре" не закрывается ни на минуту и готов принять пациентов в любое время суток. В клинике всегда присутствует <router-link class="main-description__link" to="">
+            дежурный лор-врач,
+          </router-link> готовый оказать своевременную медицинскую помощь нашим пациентам.
+        </p>
+        <h1 class="main-title mb-5">
+          Вызов лор-врача на дом
+        </h1>
+        <p class="main-description mb-8">
+          Для удобства наших пациентов в клинике организована <router-link class="main-description__link" to="">
+            служба вызова лор-врача на дом.
+          </router-link> В случае если у Вас температура или Вы по объективным причинам не можете самостоятельно посетить клинику, свяжитесь с администратором клиники и вызовите лор-врача на дом. Прием заявок осуществляется круглосуточно.
+        </p>
+        <h1 class="main-title mb-5">
+          Операции в клинике уха, горла и носа
+        </h1>
+        <p class="main-description mb-8">
+          В клинике проводится широкий спектр <router-link class="main-description__link" to="">
+            хирургических операций,
+          </router-link> таких как <router-link class="main-description__link" to="">
+            удаление аденоидов, удаление миндалин, тимпанопластика, септопластика,
+          </router-link> ринопластика, вазотомия и др. В нашем распоряжении операционная и стационар, которые оснащены самым современным медицинским оборудованием. Команда хирургов представлена широким спектром специалистов своей области, имеющих огромный опыт проведения сложнейших хирургических операций с использованием современных технологий оперирования и реабилитации пациентов.
+        </p>
+        <img class="w-full" src="/layout/images/adenoidy.jpg" alt="dsfsdddddddddd">
+        <h1 class="main-title mb-5">
+          Центр лор-помощи в Москве
+        </h1>
+        <p class="main-description mb-5">
+          Клиника уха, горла и носа является современным <span class="text-black font-normal">лор-центром в Москве</span>, где каждый человек может рассчитывать на высококвалифицированную медицинскую помощь, пройти курсы физиотерапии и укрепить свое здоровье.
+        </p>
+        <p class="main-description mb-5">
+          В клинике физиотерапевтические процедуры включают в себя целый спектр мероприятий:
+        </p>
+        <ul class="m-0 pl-4 mb-5">
+          <li class="mb-3">
+            <p class="main-description">
+              <router-link class="main-description__link" to="">
+                лазеротерапия
+              </router-link> и магнитотерапия на аппарате Милта
+            </p>
+          </li>
+          <li class="mb-3">
+            <p class="main-description">
+              <router-link class="main-description__link" to="">
+                тубус кварц
+              </router-link>
+            </p>
+          </li>
+          <li class="mb-3">
+            <p class="main-description">
+              пневмомассаж
+            </p>
+          </li>
+          <li class="mb-3">
+            <p class="main-description">
+              <router-link class="main-description__link" to="">
+                электрофорез
+              </router-link>
+            </p>
+          </li>
+          <li class="mb-3">
+            <p class="main-description">
+              промывание лакун миндалин на аппарате «Тонзиллор»
+            </p>
+          </li>
+          <li class="mb-3">
+            <p class="main-description">
+              <router-link class="main-description__link" to="">
+                соляная пещера
+              </router-link>
+            </p>
+          </li>
+        </ul>
+        <p class="main-description pb-8">
+          Физиотерапия является неотъемлемой частью комплексной терапии, позволяет достигать более быстрых результатов в лечении заболеваний лор-органов. Также физиотерапия позволяет сократить сроки реабилитации в послеоперационном периоде.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- disease -->
+  <section>
+    <div class="container">
+      <div>
+        <h1 class="main-title text-4rem mb-6">
+          Симптомы заболеваний
+        </h1>
+        <div class="grid mb-8">
+          <div class="col-12 md:col-6  xl:col-4 mb-6 scroll-hover">
+            <div class="flex line-scroll justify-content-center md:justify-content-start">
+              <h1 class="list-title ml-4">
+                УШИ
+              </h1>
+            </div>
+            <ul class="list-menu">
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Шум в ухе
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Снижение слуха
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Боль в ухе
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Серная пробка в ухе
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link " to="">
+                  Заложенность уха
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Выделения из уха
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Экзостозы
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Травмы уха
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Ушной свищ
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Кровь из уха
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Атрезии слухового прохода
+                </router-link>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 md:col-6  xl:col-4 mb-6 scroll-hover">
+            <div class="flex line-scroll justify-content-center md:justify-content-start">
+              <h1 class="list-title ml-4">
+                ГОРЛО
+              </h1>
+            </div>
+            <ul class="list-menu">
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Боль в горле
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Увеличенные миндалины
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Кашель
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Першение в горле
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Налет на языке
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Пропал голос
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Отек гортани
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Аденоиды
+                </router-link>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 md:col-6  xl:col-4 mb-6 scroll-hover">
+            <div class="flex line-scroll justify-content-center md:justify-content-start">
+              <h1 class="list-title ml-4">
+                НОС
+              </h1>
+            </div>
+            <ul class="list-menu">
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Кровотечение из носа
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Полипы в носу
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Насморк
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Заложенность носа
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Кривой нос
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Фурункул в носу
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Перфорация носовой перегородки
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Травмы носа
+                </router-link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1 class="main-title mb-5">
+          Заболевания лор-органов
+        </h1>
+        <div class="grid ">
+          <div class="col-12 md:col-6  xl:col-4 mb-6 scroll-hover">
+            <div class="flex line-scroll justify-content-center md:justify-content-start">
+              <h1 class="list-title ml-4">
+                БОЛЕЗНИ НОСА
+              </h1>
+            </div>
+            <ul class="list-menu">
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Синусит
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Гайморит
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Фронтит
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Этмоидит
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link " to="">
+                  Сфеноидит
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Ринит
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Ринофима
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Озена
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Гранулематоз Вегенера
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Сикоз носа
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Атрезия хоан
+                </router-link>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 md:col-6  xl:col-4 mb-6 scroll-hover">
+            <div class="flex line-scroll justify-content-center md:justify-content-start">
+              <h1 class="list-title ml-4">
+                БОЛЕЗНИ ГОРЛА
+              </h1>
+            </div>
+            <ul class="list-menu">
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Ларингит
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Тонзиллит
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Паратонзиллярный абсцесс
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Фарингит
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Трахеит
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Ложный круп
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Хондроперихондрит
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Заглоточный абсцесс
+                </router-link>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 md:col-6  xl:col-4 mb-6 scroll-hover">
+            <div class="flex line-scroll justify-content-center md:justify-content-start">
+              <h1 class="list-title ml-4">
+                БОЛЕЗНИ УХА
+              </h1>
+            </div>
+            <ul class="list-menu">
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Отит
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Отосклероз
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Болезнь Меньера
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Тубоотит
+                </router-link>
+              </li>
+              <li class="list-item flex md:hidden">
+                <router-link class="list-link" to="">
+                  Лабиринтит
+                </router-link>
+              </li>
+              <li class="list-item">
+                <router-link class="list-link" to="">
+                  Нейросенсорная тугоухость
+                </router-link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="bg-[#364779] py-8">
+    <div class="container">
+      <div class="grid justify-content-between">
+        <div class="col-12 lg:col-7">
+          <div class="grid">
+            <div class="col-12 sm:col-6 md:col-4 mb-4">
+              <h2 class="footer-title">
+                Клиника
+              </h2>
+              <ul class="footer-menu">
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    О клинике
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Специалисты
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Контакты
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Работа в клинике
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Новости
+                  </router-link>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 mb-4">
+              <h2 class="footer-title">
+                Услуги
+              </h2>
+              <ul class="footer-menu">
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Прайс-лист
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Детский лор
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Дежурный лор
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Лор-врач на дом
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Онлайн-консультация
+                  </router-link>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 mb-4">
+              <h2 class="footer-title">
+                Пациентам
+              </h2>
+              <ul class="footer-item">
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Контроль качества
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Отзывы о лор-клинике
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Статьи
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Клинические случаи
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Прием по ДМС
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Налоговый вычет
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Бесплатное лечение
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Партнеры
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Отзывы на картах
+                  </router-link>
+                </li>
+                <li class="footer-item">
+                  <router-link class="footer-link" to="">
+                    Публичная оферта о компьютерной диагностике слуха
+                  </router-link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-column">
+            <h2 class="footer-title">
+              Конфиденциальность
+            </h2>
+            <p class="footer-link">
+              Согласие на обработку персональных данных
+            </p>
+            <p class="footer-link">
+              Политика в отношении обработки персональных данных
+            </p>
+          </div>
+        </div>
+        <div class="col-12 lg:col-3">
+          <div class="flex justify-content-center ">
+            <div class="grid--branch-footer relative grid sm:justify-content-center my-5 flex-column">
+              <div class="branch-animation-left" />
+              <div class="col-12 ">
+                <div class="branch flex-column">
+                  <a href="tel:8(495)153-04-49" class=" text-white font-bold text-3xl" style="width: fit-content">8 (495) 153-04-49</a>
+                  <p class="text-white text-1.1em">
+                    (круглосуточно)
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="branch branch--white-text">
+                  <div class="branch__metro branch__metro--gray" />
+                  <div>
+                    <h3 class="branch__title">
+                      Цветной бульвар
+                    </h3>
+                    <p class="branch__subtitle">
+                      Москва, Самотечная, 5
+                    </p>
+                    <Tag value="Круглосуточно" class="text-sm font-normal p-tag-primary" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="branch branch--white-text">
+                  <div class="branch__metro branch__metro--red" />
+                  <div>
+                    <h3 class="branch__title">
+                      Преображенская площадь
+                    </h3>
+                    <p class="branch__subtitle">
+                      Преображенская площадь
+                    </p>
+                    <p class="branch__description">
+                      Ежедневно c 09:00 до 21:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="branch branch--white-text">
+                  <div class="branch__metro branch__metro--gray" />
+                  <div>
+                    <h3 class="branch__title">
+                      Бульвар Дмитрия Донского
+                    </h3>
+                    <p class="branch__subtitle">
+                      Бульвар Дмитрия Донского
+                    </p>
+                    <p class="branch__description">
+                      Ежедневно c 09:00 до 21:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="branch branch--white-text">
+                  <div class="branch__metro branch__metro--yellow" />
+                  <div>
+                    <h3 class="branch__title">
+                      Мичуринский проспект
+                    </h3>
+                    <p class="branch__subtitle">
+                      Москва, Большая Очаковская, 3
+                    </p>
+                    <p class="branch__description">
+                      Ежедневно c 09:00 до 21:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="branch branch--white-text">
+                  <div class="branch__metro branch__metro--blue" />
+                  <div>
+                    <h3 class="branch__title">
+                      Фили
+                    </h3>
+                    <p class="branch__subtitle">
+                      Москва, Береговой проезд, 7
+                    </p>
+                    <p class="branch__description">
+                      Ежедневно c 09:00 до 21:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="branch branch--white-text">
+                  <div class="mr-3">
+                    <img src="/layout/images/sun.svg" alt="sun" class="w-2rem">
+                  </div>
+                  <div>
+                    <div class="flex align-items-center">
+                      <h3 class="branch__title">
+                        г. Сочи
+                      </h3>
+                      <Tag value="cкоро" class="text-sm font-normal p-tag-danger ml-2 -mt-4" />
+                    </div>
+
+                    <p class="branch__subtitle">
+                      Навагинская, 7
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="branch-animation-right" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-icons">
+        <div class="footer-icon">
+          <img src="https://lorlor.ru/Content/images/Zen_shortlogo.svg" alt="dssadsda" class="w-7rem h-5rem">
+        </div>
+        <div class="footer-icon">
+          <img src="https://lorlor.ru/Content/images/iconmonstr-vk-1.svg" alt="dwdas" class="w-3rem">
+        </div>
+        <div class="footer-icon">
+          <i class="pi pi-youtube text-5xl" />
+        </div>
+        <div class="footer-icon">
+          <i class="pi pi-instagram text-3xl" />
+        </div>
+        <div class="footer-icon">
+          <i class="pi pi-telegram text-3xl" />
+        </div>
+      </div>
+      <div class="bg-[#465B9C] w-full py-3">
+        <p class="text-[#d4d4d4] text-0.9em text-center font-sans">
+          © 2013 - 2023 Клиника уха, горла и носа, лицензия №ЛО-77-01-0099047 от 24.09.2014г.
+        </p>
+        <p class="text-[#d4d4d4] text-0.9em text-center font-sans">
+          Создание сайта клиники и медицинский маркетинг: medmarketing
+        </p>
+        <p class="text-[#d4d4d4] text-0.9em text-center font-sans">
+          Карта сайта
+        </p>
+      </div>
+    </div>
+  </footer>
     <section class="awards">
       <div class="container">
         <h2 class="text-700 text-2xl md:text-4xl">

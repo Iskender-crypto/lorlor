@@ -178,12 +178,131 @@
         </template>
       </Carousel>
     </section>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut fugiat impedit itaque, minus quam voluptas? Cupiditate deserunt doloremque, dolores ea esse est ex excepturi iusto maiores neque nobis, omnis porro praesentium provident quidem rerum sunt temporibus tenetur? Accusantium assumenda cum eaque, ipsum laboriosam molestias perspiciatis quaerat quia quidem, quos sed, veniam? Consequatur cumque exercitationem impedit, in inventore, libero minima nam natus nostrum obcaecati, perferendis quaerat reiciendis repudiandae ullam veritatis voluptatem voluptatum. Adipisci alias aspernatur assumenda at debitis deleniti distinctio doloremque doloribus ducimus ea, ex expedita hic ipsa itaque laborum magnam nesciunt nostrum perferendis, perspiciatis quaerat tempore vero voluptas. Aut dolore ea eligendi magni necessitatibus odio suscipit unde? Ad alias doloremque incidunt odit ut. Alias aliquid beatae blanditiis consectetur cum, cupiditate dolores eius eligendi excepturi ipsum laborum minima minus placeat quam quibusdam quis rem similique sint sunt tempore ullam vel voluptas voluptates! Atque est eveniet inventore quae quaerat qui quia, unde? A accusantium adipisci atque aut, autem beatae consectetur, consequuntur cupiditate dolorem doloremque dolores ea eaque impedit ipsam iusto laudantium minus obcaecati odio officiis omnis perferendis possimus quaerat quisquam quos sequi sunt suscipit temporibus totam unde veritatis vero vitae voluptates voluptatum. A ad adipisci, consequuntur corporis culpa deleniti deserunt doloremque dolores doloribus eligendi enim est eveniet ipsam maiores modi natus obcaecati quas quia quos reprehenderit saepe, sint sit ut? Aliquam animi aut beatae distinctio exercitationem ipsum nostrum nulla quaerat quam, quasi, similique, temporibus! Ab consequatur corporis debitis ducimus est eveniet exercitationem explicabo facere fugit harum impedit in inventore iure iusto laborum magni, nam natus odit possimus quam quas quidem quisquam rem rerum sequi ullam ut veniam! Ab accusamus, ea, error et eum excepturi impedit ipsa libero nemo neque nostrum officia quas rem, repellendus sequi. Dolores eius inventore iusto magni quam repellendus sequi sint tempore. A assumenda at consectetur cumque, dignissimos dolor doloremque eaque est, ex fugiat fugit id laboriosam quas ratione saepe tenetur vel. Ab cum dignissimos earum iste libero molestiae nisi odio odit praesentium ullam! Amet asperiores assumenda consequatur consequuntur esse libero nam numquam officiis pariatur velit. Accusantium aliquam, autem consequuntur corporis cum deserunt dolorum excepturi exercitationem facere fugit hic id illum libero, molestiae mollitia neque odio odit officiis possimus provident quibusdam reprehenderit veritatis! Ab ad alias animi consequuntur debitis doloremque dolores ducimus ea eius et explicabo facilis in modi nostrum, nulla odit praesentium quae quasi repellendus rerum soluta vero voluptas? Deserunt dolor enim et, ipsam minus soluta. Aliquam asperiores eaque necessitatibus, nesciunt nihil pariatur quam reiciendis tempore. Aliquid architecto at eius harum illum minus mollitia nam, nostrum officiis praesentium quia repellat soluta ut? Aliquid deserunt est id nesciunt pariatur. Consectetur dolor dolorem incidunt sapiente voluptate. Accusamus, architecto debitis ea, eaque earum enim incidunt neque, numquam omnis provident qui reiciendis ullam vero? Ad eligendi ipsam provident. A ab accusamus adipisci aperiam aspernatur blanditiis consectetur cum debitis delectus enim est eum eveniet excepturi facilis fuga incidunt inventore ipsum minima nam odit officiis optio perspiciatis porro praesentium quam quis repellendus, repudiandae rerum similique sit tempore ullam unde vitae! Aliquid consequuntur, eos?
-    </p>
+    <section class="awards">
+      <div class="container">
+        <h2 class="text-700 text-2xl md:text-4xl">
+          Наши награды
+        </h2>
+        <div class="grid">
+          <div class="col-12 md:col-6 lg:col-5 xl:col-3 mb-5">
+            <Card class="h-full">
+              <template #header>
+                <img class="w-full h-full object-cover" alt="user header" src="https://lorlor.ru/images/ci1108668v480x320s0.jpg">
+              </template>
+              <template #title>
+                "Клиника уха, горла и носа" в ТОП-30 частных клиник Москвы
+              </template>
+              <template #content>
+                <p>
+                  Премия Продокторов по мнению пациентов.
+                </p>
+                <span>18.07.23</span>
+              </template>
+            </Card>
+          </div>
+          <div class="col-12 md:col-6 lg:col-5 xl:col-3 mb-5">
+            <Card class="h-full">
+              <template #header>
+                <img class="w-full h-full object-cover" alt="user header" src="https://lorlor.ru/images/ci1104996v480x320s0.jpg">
+              </template>
+              <template #title>
+                Наша Клиника получила "Звезду Качества" за лучшее предприятие страны 2020 года.
+              </template>
+              <template #content>
+                <span>18.07.23</span>
+              </template>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news-clinic">
+      <div class="container">
+        <h2 class="text-700 text-2xl md:text-4xl">
+          Новости клиники
+        </h2>
+        <div class="grid">
+          <div class="col-12 sm:col-6 lg:col-4" v-for="news in newsClinic" :key="news.subtitle">
+            <Card class="h-full">
+              <template #header>
+                <img class="w-full h-full object-cover" alt="user header" :src="news.img">
+              </template>
+              <template #title>
+                {{ news.title }}
+              </template>
+              <template #content>
+                <p>
+                  {{news.subtitle}}
+                </p>
+                <span>{{news.date}}</span>
+              </template>
+            </Card>
+          </div>
+        </div>
+        <div class="flex justify-content-center mt-5">
+          <Button label="Все новости" outlined  class="m-auto btn-primary border-noround  font-normal" size="large"/>
+        </div>
+      </div>
+    </section>
+    <section class="video">
+      <div class="container">
+        <h2 class="text-700 text-2xl md:text-4xl">
+          Видео
+        </h2>
+        <div class="grid">
+          <div class="col-12 sm:col-6 lg:col-4" v-for="video in videos" :key="video.img">
+            <Card class="h-full">
+              <template #header>
+                <img class="w-full h-full object-cover" alt="user header" :src="video.img">
+              </template>
+              <template #title>
+                {{ video.title }}
+              </template>
+              <template #content>
+                <p>
+                  {{video.subtitle}}
+                </p>
+              </template>
+            </Card>
+          </div>
+        </div>
+        <div class="flex justify-content-center mt-5">
+          <Button label="Все видео" outlined  class="m-auto btn-primary border-noround  font-normal" size="large"/>
+        </div>
+      </div>
+    </section>
+    <section class="video">
+      <div class="container">
+        <h2 class="text-700 text-2xl md:text-4xl">
+          Статьи
+        </h2>
+        <div class="grid">
+          <div class="col-12 sm:col-6 lg:col-4" v-for="article in articles" :key="article.img">
+            <Card class="h-full">
+              <template #header>
+                <img class="w-full h-full object-cover" alt="user header" :src="article.img">
+              </template>
+              <template #title>
+                {{ article.title }}
+              </template>
+              <template #content>
+                <p>
+                  {{article.subtitle}}
+                </p>
+              </template>
+            </Card>
+          </div>
+        </div>
+        <div class="flex justify-content-center mt-5">
+          <Button label="Все cтатьи" outlined  class="m-auto btn-primary border-noround  font-normal" size="large"/>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 <script setup lang="ts">
+
+import { ref } from 'vue'
 
 const menuItems = ref([
   {
@@ -262,6 +381,130 @@ const products = ref([
     image: '/img/bg2.jpg'
   }
 ])
+const videos = ref([
+  {
+    title: 'Букет на завтрак: чем полезен салат из роз?',
+    subtitle: 'Наш врач-эндокринолог, диетолог Севастьянова Наталья готовит салат из лепестков роз в прямом эфире.',
+    img: 'https://lorlor.ru/images/ci1155057v480x320s0.jpg'
+  },
+  {
+    title: 'Исследование слуха методом КСВП под наркозом',
+    img: 'https://lorlor.ru/images/ci1144151v480x320s0.jpg'
+  },
+  {
+    title: 'Аденоиды: лечить или удалять?',
+    img: 'https://lorlor.ru/images/ci1143865v480x320s0.jpg'
+  },
+  {
+    title: 'Как побороть нафтизиновую зависимость?',
+    subtitle: 'Какое обследование показано при периодически возникающих головокружениях?',
+    img: 'https://lorlor.ru/images/ci1143777v480x320s0.jpg'
+  },
+  {
+    title: 'Доктор Никонов ждет вас и готов помочь!',
+    subtitle: 'Развенчиваем основные вопросы, которые могут мешать принятию решения.',
+    img: 'https://lorlor.ru/images/ci1143532v480x320s0.jpg'
+  }, {
+    title: 'Антивозрастные стратегии на страже здоровья и красоты. Пошаговые инструкции.',
+    subtitle: 'Вебинар от врача-диетолога, эндокринолога Севастьяновой Натальи Владимировны.',
+    img: 'https://lorlor.ru/images/ci1141764v480x320s0.jpg'
+  }, {
+    title: 'Что такое аденоиды, почему они воспаляются и как проводится аденотомия',
+    img: 'https://lorlor.ru/images/ci1141284v480x320s0.jpg'
+  }, {
+    title: 'Все о гайморотомии',
+    img: 'https://lorlor.ru/images/ci1141283v480x320s0.jpg'
+  }, {
+    title: 'Тонзилэктомия',
+    img: 'https://lorlor.ru/images/ci1119605v480x320s0.jpg'
+  }
+])
+const newsClinic = ref([
+  {
+    title: 'Капли VS спрей',
+    subtitle: 'Что подойдет именно вам? Рассказывает отоларинголог клиники - Анатолий Якушев.',
+    img: 'https://lorlor.ru/images/ci1156347v480x320s0.jpg'
+  },
+  {
+    title: 'Для чего необходимо слухопротезирование?',
+    subtitle: 'Как проходит процедура в нашей клинике? Смотрите в новом ролике.',
+    img: 'https://lorlor.ru/images/ci1156345v480x320s0.jpg'
+  },
+  {
+    title: 'Ребенок боится врачей?',
+    subtitle: 'Что с этим делать - рассказывает на видео наш оториноларинголог Рагим Садыхов.',
+    img: 'https://lorlor.ru/images/ci1156336v480x320s0.jpg'
+  },
+  {
+    title: 'Эпизодически кружится голова?',
+    subtitle: 'Какое обследование показано при периодически возникающих головокружениях?',
+    img: 'https://lorlor.ru/images/ci1156318v480x320s0.jpg'
+  },
+  {
+    title: 'С нами легко, даже если вы приехали оперироваться из другой страны!',
+    subtitle: 'Развенчиваем основные вопросы, которые могут мешать принятию решения.',
+    img: 'https://lorlor.ru/images/ci1156306v480x320s0.jpg'
+  }, {
+    title: 'Не чистите уши при детях!',
+    subtitle: 'И другие способы, как НЕ надо чистить уши. Рассказывает на видео эксперт клиники Якушев Анатолий Андреевич.',
+    img: 'https://lorlor.ru/images/ci1156278v480x320s0.jpg'
+  }, {
+    title: 'Когда необходимо делать пункцию?',
+    subtitle: 'Об этом рассказал Акопян Карен - отоларинголог клиники.',
+    img: '\thttps://lorlor.ru/images/ci1156277v480x320s0.jpg'
+  }, {
+    title: 'Открытие филиала "Клиники уха, горла и носа" в Сочи состоится 31 июля',
+    subtitle: 'Мы открываем новый филиал в городе Сочи.',
+    img: 'https://lorlor.ru/images/ci1156221v480x320s0.jpg'
+  }, {
+    title: 'Капли VS спрей',
+    subtitle: 'Что подойдет именно вам? Рассказывает отоларинголог клиники - Анатолий Якушев.',
+    img: 'https://lorlor.ru/images/ci1156148v480x320s0.jpg'
+  }
+])
+const articles = ref([
+  {
+    title: 'Аденоиды - все о заболевании',
+    subtitle: 'Что такое аденоиды, причины, симптомы, степени гипертрофии, методы диагностики и лечения аденоидов.',
+    img: 'https://lorlor.ru/images/ci1155716v480x320s0.jpg'
+  },
+  {
+    title: 'Синдром пустого носа',
+    subtitle: 'Все о губительном для качества жизни заболевании.',
+    img: 'https://lorlor.ru/images/ci1143680v480x320s0.jpg'
+  },
+  {
+    title: 'Фурункул наружного слухового прохода',
+    subtitle: 'Фурункул уха - болезненное воспаление волосяного мешочка слухового канала. Симптомы, анатомия и лечение.',
+    img: 'https://lorlor.ru/images/ci1143420v480x320s0.jpg'
+  },
+  {
+    title: 'Тиннитус (звон в ушах): все о беспокоящем симптоме',
+    subtitle: 'Глубинные причины возникновения в связи с анатомией человека, влияние на психику, грамотный подход к лечению.',
+    img: 'https://lorlor.ru/images/ci1142781v480x320s0.jpg'
+  },
+  {
+    title: 'Фармакотерапия никотиновой зависимости',
+    subtitle: 'Препараты для лечения табачной зависимости.',
+    img: 'https://lorlor.ru/images/ci1141955v480x320s0.jpg'
+  }, {
+    title: 'Спирометрия - что это и зачем она нужна?',
+    subtitle: 'Спирометрия - базисный метод функциональной диагностики внешнего дыхания.',
+    img: 'https://lorlor.ru/images/ci1141311v480x320s0.jpg'
+  }, {
+    title: 'Слизь в горле или синдром постназального затекания',
+    subtitle: 'В этой статье объясняются симптомы и причины слизи в носоглотке, а также способы диагностики и лечения.',
+    img: 'https://lorlor.ru/images/ci1141194v480x320s0.jpg'
+  }, {
+    title: 'Экссудативный средний отит у детей. Симптомы, причины и лечение',
+    subtitle: 'Негнойное заболевание среднего уха, при котором в среднем ухе происходит накопление патологической жидкости.',
+    img: 'https://lorlor.ru/images/ci1106513v480x320s0.jpg'
+  }, {
+    title: 'Синдром Маршалла (PFAPA синдром)',
+    subtitle: 'Что такое синдром Маршалла, клиническая картина, симптомы, лечение.',
+    img: 'https://lorlor.ru/images/ci1105933v480x320s0.jpg'
+  }
+])
 const toggle = (event) => {
   menu.value.toggle(event)
 }
@@ -269,19 +512,4 @@ const toggle = (event) => {
 const responsiveOptions = ref([
 
 ])
-const getSeverity = (status) => {
-  switch (status) {
-    case 'INSTOCK':
-      return 'success'
-
-    case 'LOWSTOCK':
-      return 'warning'
-
-    case 'OUTOFSTOCK':
-      return 'danger'
-
-    default:
-      return null
-  }
-}
 </script>

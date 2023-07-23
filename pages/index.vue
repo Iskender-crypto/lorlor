@@ -1,160 +1,3 @@
-<script setup lang="ts">
-import 'public/layout/fonts/roboto/stylesheet.css'
-
-const menuItems = ref([
-  {
-    label: 'Главная'
-  },
-  {
-    label: 'Детский лор'
-  },
-  {
-    label: 'Лор-врачи'
-  },
-  {
-    label: 'Лор-операции'
-  },
-  {
-    label: 'Услуги'
-  },
-  {
-    label: 'Цены'
-  },
-  {
-    label: 'Пациенту',
-    items: [
-      { lable: 'Онлайн-консультация', icon: 'pi pi-fw pi-file' },
-      { lable: 'Тест слуха онлайн' },
-      { lable: 'Вызов врача на дом' },
-      { lable: 'Вызов медсестры на дом' },
-      { lable: 'Акции' },
-      { lable: 'Отзывы' },
-      { lable: 'Второе мнение' },
-      { lable: 'Вопрос-ответ' },
-      { lable: 'Бесплатное лечение' },
-      { lable: 'Прием по ДМС' },
-      { lable: 'Налоговый вычет' },
-      { lable: 'Статьи' },
-      { lable: 'Контроль качества' },
-      { lable: 'Рассрочка' },
-      { lable: 'Подготовка к операции' },
-      { lable: 'Партнеры' }
-    ]
-  },
-  {
-    label: 'Контакты'
-  }
-])
-const loginItems = ref([
-  {
-    label: 'Войти в личный кабинет'
-  },
-  {
-    label: 'Зарегистрироваться'
-  }
-])
-const menu = ref()
-
-const products = ref([
-  {
-    title: 'Поможем услышать мир',
-    subtitle: 'Лучшие лор хирурги',
-    link: 'Узнайне подробнее >>',
-    image: '/img/bg1.jpg'
-  },
-  {
-    title: 'Лор операциo',
-    subtitle: 'Лучшие лор хирурги',
-    link: 'Узнайне подробнее >>',
-    image: '/img/bg2.jpg'
-  }, {
-    title: 'Лор операция',
-    subtitle: 'Лучшие лор хирурги',
-    link: 'Узнайне подробнее >>',
-    image: '/img/bg1.jpg'
-  }, {
-    title: 'Лор операция',
-    subtitle: 'Лучшие лор хирурги',
-    link: 'Узнайне подробнее >>',
-    image: '/img/bg2.jpg'
-  }
-])
-// ///////////////////////////////////////////////////////////////
-
-// //////////////////////////////////////////////////////////////
-
-const responsiveOptions = ref([
-
-])
-
-/// cards object
-const cards = ref([
-  {
-    id: 1,
-    img: 'layout/images/ci1154646v360x540s0.jpg',
-    name: 'Галкин Алексей Владимирович',
-    expert: 'эксперт по лор-патологиям',
-    profession: 'оториноларинголог, ринохирург',
-    experience: '16 лет'
-  },
-  {
-    id: 2,
-    img: 'layout/images/card 2.jpg',
-    name: 'Садыхов Рагим Агаларович',
-    expert: 'эксперт по лор-патологиям',
-    profession: 'оториноларинголог, ринохирург',
-    experience: '8 лет'
-  },
-  {
-    id: 3,
-    img: 'layout/images/card 3.jpg',
-    name: 'Чуприков Роман Сергеевич',
-    expert: 'эксперт по лор-патологиям',
-    profession: 'оториноларинголог, ринохирург, фониатр, врач высшей категории',
-    experience: '21 лет'
-  },
-  {
-    id: 4,
-    img: 'layout/images/card 4.jpg',
-    name: 'Оганесян Тигран Сергеевич',
-    expert: 'заведующий отделением, экс',
-    profession: 'оториноларинголог, ринохирург',
-    experience: '20 лет'
-  },
-  {
-    id: 5,
-    img: 'layout/images/card 5.jpg',
-    name: 'Якушев Анатолий Андреевич',
-    expert: 'ведущий врач клиники',
-    profession: 'оториноларинголог, отохирург',
-    experience: '13 лет'
-  },
-  {
-    id: 6,
-    img: 'layout/images/card 6.jpg',
-    name: 'Соколова Алла Васильевна',
-    expert: 'кандидат медицинских наук',
-    profession: 'оториноларинголог, отохирург, врач высшей категории',
-    experience: 'свыше 35 лет'
-  },
-  {
-    id: 7,
-    img: 'layout/images/card 7.jpg',
-    name: 'Старосветский Андрей Борисович',
-    expert: 'кандидат медицинских наук',
-    profession: 'оториноларинголог, ринохирург',
-    experience: '22 лет'
-  },
-  {
-    id: 8,
-    img: 'layout/images/card 8.jpg',
-    name: 'Мосейкина Лилия Алексеевна',
-    expert: 'кандидат медицинских наук',
-    profession: 'отохирург',
-    experience: '31 лет'
-  }
-])
-</script>
 <template>
   <!--  header-->
   <div>
@@ -1613,3 +1456,160 @@ const cards = ref([
     </div>
   </footer>
 </template>
+<script setup lang="ts">
+import 'public/layout/fonts/roboto/stylesheet.css'
+
+const menuItems = ref([
+  {
+    label: 'Главная'
+  },
+  {
+    label: 'Детский лор'
+  },
+  {
+    label: 'Лор-врачи'
+  },
+  {
+    label: 'Лор-операции'
+  },
+  {
+    label: 'Услуги'
+  },
+  {
+    label: 'Цены'
+  },
+  {
+    label: 'Пациенту',
+    items: [
+      { lable: 'Онлайн-консультация', icon: 'pi pi-fw pi-file' },
+      { lable: 'Тест слуха онлайн' },
+      { lable: 'Вызов врача на дом' },
+      { lable: 'Вызов медсестры на дом' },
+      { lable: 'Акции' },
+      { lable: 'Отзывы' },
+      { lable: 'Второе мнение' },
+      { lable: 'Вопрос-ответ' },
+      { lable: 'Бесплатное лечение' },
+      { lable: 'Прием по ДМС' },
+      { lable: 'Налоговый вычет' },
+      { lable: 'Статьи' },
+      { lable: 'Контроль качества' },
+      { lable: 'Рассрочка' },
+      { lable: 'Подготовка к операции' },
+      { lable: 'Партнеры' }
+    ]
+  },
+  {
+    label: 'Контакты'
+  }
+])
+const loginItems = ref([
+  {
+    label: 'Войти в личный кабинет'
+  },
+  {
+    label: 'Зарегистрироваться'
+  }
+])
+const menu = ref()
+
+const products = ref([
+  {
+    title: 'Поможем услышать мир',
+    subtitle: 'Лучшие лор хирурги',
+    link: 'Узнайне подробнее >>',
+    image: '/img/bg1.jpg'
+  },
+  {
+    title: 'Лор операциo',
+    subtitle: 'Лучшие лор хирурги',
+    link: 'Узнайне подробнее >>',
+    image: '/img/bg2.jpg'
+  }, {
+    title: 'Лор операция',
+    subtitle: 'Лучшие лор хирурги',
+    link: 'Узнайне подробнее >>',
+    image: '/img/bg1.jpg'
+  }, {
+    title: 'Лор операция',
+    subtitle: 'Лучшие лор хирурги',
+    link: 'Узнайне подробнее >>',
+    image: '/img/bg2.jpg'
+  }
+])
+// ///////////////////////////////////////////////////////////////
+
+// //////////////////////////////////////////////////////////////
+
+const responsiveOptions = ref([
+
+])
+
+/// cards object
+const cards = ref([
+  {
+    id: 1,
+    img: 'layout/images/ci1154646v360x540s0.jpg',
+    name: 'Галкин Алексей Владимирович',
+    expert: 'эксперт по лор-патологиям',
+    profession: 'оториноларинголог, ринохирург',
+    experience: '16 лет'
+  },
+  {
+    id: 2,
+    img: 'layout/images/card 2.jpg',
+    name: 'Садыхов Рагим Агаларович',
+    expert: 'эксперт по лор-патологиям',
+    profession: 'оториноларинголог, ринохирург',
+    experience: '8 лет'
+  },
+  {
+    id: 3,
+    img: 'layout/images/card 3.jpg',
+    name: 'Чуприков Роман Сергеевич',
+    expert: 'эксперт по лор-патологиям',
+    profession: 'оториноларинголог, ринохирург, фониатр, врач высшей категории',
+    experience: '21 лет'
+  },
+  {
+    id: 4,
+    img: 'layout/images/card 4.jpg',
+    name: 'Оганесян Тигран Сергеевич',
+    expert: 'заведующий отделением, экс',
+    profession: 'оториноларинголог, ринохирург',
+    experience: '20 лет'
+  },
+  {
+    id: 5,
+    img: 'layout/images/card 5.jpg',
+    name: 'Якушев Анатолий Андреевич',
+    expert: 'ведущий врач клиники',
+    profession: 'оториноларинголог, отохирург',
+    experience: '13 лет'
+  },
+  {
+    id: 6,
+    img: 'layout/images/card 6.jpg',
+    name: 'Соколова Алла Васильевна',
+    expert: 'кандидат медицинских наук',
+    profession: 'оториноларинголог, отохирург, врач высшей категории',
+    experience: 'свыше 35 лет'
+  },
+  {
+    id: 7,
+    img: 'layout/images/card 7.jpg',
+    name: 'Старосветский Андрей Борисович',
+    expert: 'кандидат медицинских наук',
+    profession: 'оториноларинголог, ринохирург',
+    experience: '22 лет'
+  },
+  {
+    id: 8,
+    img: 'layout/images/card 8.jpg',
+    name: 'Мосейкина Лилия Алексеевна',
+    expert: 'кандидат медицинских наук',
+    profession: 'отохирург',
+    experience: '31 лет'
+  }
+])
+</script>

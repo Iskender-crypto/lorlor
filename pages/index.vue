@@ -31,7 +31,7 @@
               aria-label="Search"
             />
             <div class="hidden sm:flex ml-4 border-left-1 border-900 h-2rem" />
-            <a href="telto:8(495)153-04-49" class="white-space-nowrap hidden sm:flex ml-4 text-red-500 font-medium text-lg">8 (495) 153-04-49</a>
+            <a href="tel:8(495)153-04-49" class="white-space-nowrap hidden sm:flex ml-4 text-red-500 font-medium text-lg">8 (495) 153-04-49</a>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@
             </div>
           </div>
           <div class="block sm:hidden flex justify-content-center">
-            <a href="telto:8(495)153-04-49" class=" text-red-500 font-bold text-3xl" style="width: fit-content">8 (495) 153-04-49</a>
+            <a href="tel:8(495)153-04-49" class=" text-red-500 font-bold text-3xl" style="width: fit-content">8 (495) 153-04-49</a>
           </div>
 
           <div class="col-12 sm:col-6 md:col-4 lg:col-3">
@@ -690,7 +690,7 @@
         Наши специалисты
       </h1>
       <div class="grid -ml-6">
-        <div v-for="el in cards" class="col-12 xl:col-6 mb-6 pl-6 " :key="el.id">
+        <div v-for="el in cards" :key="el.id" class="col-12 xl:col-6 mb-6 pl-6 ">
           <div class=" card flex-column sm:flex-row flex p-4 bg-white w-full h-full">
             <div class="card-animation-left" />
             <div class="">
@@ -710,7 +710,7 @@
                 <p>
                   стаж: <b>{{ el.experience }}</b>
                 </p>
-                <div class="rectangle"></div>
+                <div class="rectangle" />
               </div>
               <div class="card-animation-right" />
             </div>
@@ -1168,6 +1168,126 @@
       </div>
     </div>
   </section>
+  <section class="awards">
+    <div class="container">
+      <h2 class="text-700 text-2xl md:text-4xl">
+        Наши награды
+      </h2>
+      <div class="grid">
+        <div class="col-12 md:col-6 lg:col-5 xl:col-3 mb-5">
+          <Card class="h-full">
+            <template #header>
+              <img class="w-full h-full object-cover" alt="user header" src="https://lorlor.ru/images/ci1108668v480x320s0.jpg">
+            </template>
+            <template #title>
+              "Клиника уха, горла и носа" в ТОП-30 частных клиник Москвы
+            </template>
+            <template #content>
+              <p>
+                Премия Продокторов по мнению пациентов.
+              </p>
+              <span>18.07.23</span>
+            </template>
+          </Card>
+        </div>
+        <div class="col-12 md:col-6 lg:col-5 xl:col-3 mb-5">
+          <Card class="h-full">
+            <template #header>
+              <img class="w-full h-full object-cover" alt="user header" src="https://lorlor.ru/images/ci1104996v480x320s0.jpg">
+            </template>
+            <template #title>
+              Наша Клиника получила "Звезду Качества" за лучшее предприятие страны 2020 года.
+            </template>
+            <template #content>
+              <span>18.07.23</span>
+            </template>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="news-clinic">
+    <div class="container">
+      <h2 class="text-700 text-2xl md:text-4xl">
+        Новости клиники
+      </h2>
+      <div class="grid">
+        <div v-for="news in newsClinic" :key="news.subtitle" class="col-12 sm:col-6 lg:col-4">
+          <Card class="h-full">
+            <template #header>
+              <img class="w-full h-full object-cover" alt="user header" :src="news.img">
+            </template>
+            <template #title>
+              {{ news.title }}
+            </template>
+            <template #content>
+              <p>
+                {{ news.subtitle }}
+              </p>
+              <span>{{ news.date }}</span>
+            </template>
+          </Card>
+        </div>
+      </div>
+      <div class="flex justify-content-center mt-5">
+        <Button label="Все новости" outlined class="m-auto btn-primary border-noround  font-normal" size="large" />
+      </div>
+    </div>
+  </section>
+  <section class="video">
+    <div class="container">
+      <h2 class="text-700 text-2xl md:text-4xl">
+        Видео
+      </h2>
+      <div class="grid">
+        <div v-for="video in videos" :key="video.img" class="col-12 sm:col-6 lg:col-4">
+          <Card class="h-full">
+            <template #header>
+              <img class="w-full h-full object-cover" alt="user header" :src="video.img">
+            </template>
+            <template #title>
+              {{ video.title }}
+            </template>
+            <template #content>
+              <p>
+                {{ video.subtitle }}
+              </p>
+            </template>
+          </Card>
+        </div>
+      </div>
+      <div class="flex justify-content-center mt-5">
+        <Button label="Все видео" outlined class="m-auto btn-primary border-noround  font-normal" size="large" />
+      </div>
+    </div>
+  </section>
+  <section class="video">
+    <div class="container">
+      <h2 class="text-700 text-2xl md:text-4xl">
+        Статьи
+      </h2>
+      <div class="grid">
+        <div v-for="article in articles" :key="article.img" class="col-12 sm:col-6 lg:col-4">
+          <Card class="h-full">
+            <template #header>
+              <img class="w-full h-full object-cover" alt="user header" :src="article.img">
+            </template>
+            <template #title>
+              {{ article.title }}
+            </template>
+            <template #content>
+              <p>
+                {{ article.subtitle }}
+              </p>
+            </template>
+          </Card>
+        </div>
+      </div>
+      <div class="flex justify-content-center mt-5">
+        <Button label="Все cтатьи" outlined class="m-auto btn-primary border-noround  font-normal" size="large" />
+      </div>
+    </div>
+  </section>
   <!-- footer -->
   <footer class="bg-[#364779] py-8">
     <div class="container">
@@ -1452,131 +1572,9 @@
       </div>
     </div>
   </footer>
-    <section class="awards">
-      <div class="container">
-        <h2 class="text-700 text-2xl md:text-4xl">
-          Наши награды
-        </h2>
-        <div class="grid">
-          <div class="col-12 md:col-6 lg:col-5 xl:col-3 mb-5">
-            <Card class="h-full">
-              <template #header>
-                <img class="w-full h-full object-cover" alt="user header" src="https://lorlor.ru/images/ci1108668v480x320s0.jpg">
-              </template>
-              <template #title>
-                "Клиника уха, горла и носа" в ТОП-30 частных клиник Москвы
-              </template>
-              <template #content>
-                <p>
-                  Премия Продокторов по мнению пациентов.
-                </p>
-                <span>18.07.23</span>
-              </template>
-            </Card>
-          </div>
-          <div class="col-12 md:col-6 lg:col-5 xl:col-3 mb-5">
-            <Card class="h-full">
-              <template #header>
-                <img class="w-full h-full object-cover" alt="user header" src="https://lorlor.ru/images/ci1104996v480x320s0.jpg">
-              </template>
-              <template #title>
-                Наша Клиника получила "Звезду Качества" за лучшее предприятие страны 2020 года.
-              </template>
-              <template #content>
-                <span>18.07.23</span>
-              </template>
-            </Card>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="news-clinic">
-      <div class="container">
-        <h2 class="text-700 text-2xl md:text-4xl">
-          Новости клиники
-        </h2>
-        <div class="grid">
-          <div class="col-12 sm:col-6 lg:col-4" v-for="news in newsClinic" :key="news.subtitle">
-            <Card class="h-full">
-              <template #header>
-                <img class="w-full h-full object-cover" alt="user header" :src="news.img">
-              </template>
-              <template #title>
-                {{ news.title }}
-              </template>
-              <template #content>
-                <p>
-                  {{news.subtitle}}
-                </p>
-                <span>{{news.date}}</span>
-              </template>
-            </Card>
-          </div>
-        </div>
-        <div class="flex justify-content-center mt-5">
-          <Button label="Все новости" outlined  class="m-auto btn-primary border-noround  font-normal" size="large"/>
-        </div>
-      </div>
-    </section>
-    <section class="video">
-      <div class="container">
-        <h2 class="text-700 text-2xl md:text-4xl">
-          Видео
-        </h2>
-        <div class="grid">
-          <div class="col-12 sm:col-6 lg:col-4" v-for="video in videos" :key="video.img">
-            <Card class="h-full">
-              <template #header>
-                <img class="w-full h-full object-cover" alt="user header" :src="video.img">
-              </template>
-              <template #title>
-                {{ video.title }}
-              </template>
-              <template #content>
-                <p>
-                  {{video.subtitle}}
-                </p>
-              </template>
-            </Card>
-          </div>
-        </div>
-        <div class="flex justify-content-center mt-5">
-          <Button label="Все видео" outlined  class="m-auto btn-primary border-noround  font-normal" size="large"/>
-        </div>
-      </div>
-    </section>
-    <section class="video">
-      <div class="container">
-        <h2 class="text-700 text-2xl md:text-4xl">
-          Статьи
-        </h2>
-        <div class="grid">
-          <div class="col-12 sm:col-6 lg:col-4" v-for="article in articles" :key="article.img">
-            <Card class="h-full">
-              <template #header>
-                <img class="w-full h-full object-cover" alt="user header" :src="article.img">
-              </template>
-              <template #title>
-                {{ article.title }}
-              </template>
-              <template #content>
-                <p>
-                  {{article.subtitle}}
-                </p>
-              </template>
-            </Card>
-          </div>
-        </div>
-        <div class="flex justify-content-center mt-5">
-          <Button label="Все cтатьи" outlined  class="m-auto btn-primary border-noround  font-normal" size="large"/>
-        </div>
-      </div>
-    </section>
-  </div>
 </template>
 <script setup lang="ts">
-
-import { ref } from 'vue'
+import 'public/layout/fonts/roboto/stylesheet.css'
 
 const menuItems = ref([
   {
@@ -1663,10 +1661,12 @@ const videos = ref([
   },
   {
     title: 'Исследование слуха методом КСВП под наркозом',
+    subtitle: '',
     img: 'https://lorlor.ru/images/ci1144151v480x320s0.jpg'
   },
   {
     title: 'Аденоиды: лечить или удалять?',
+    subtitle: '',
     img: 'https://lorlor.ru/images/ci1143865v480x320s0.jpg'
   },
   {
@@ -1684,12 +1684,15 @@ const videos = ref([
     img: 'https://lorlor.ru/images/ci1141764v480x320s0.jpg'
   }, {
     title: 'Что такое аденоиды, почему они воспаляются и как проводится аденотомия',
+    subtitle: '',
     img: 'https://lorlor.ru/images/ci1141284v480x320s0.jpg'
   }, {
     title: 'Все о гайморотомии',
+    subtitle: '',
     img: 'https://lorlor.ru/images/ci1141283v480x320s0.jpg'
   }, {
     title: 'Тонзилэктомия',
+    subtitle: '',
     img: 'https://lorlor.ru/images/ci1119605v480x320s0.jpg'
   }
 ])
@@ -1697,43 +1700,52 @@ const newsClinic = ref([
   {
     title: 'Капли VS спрей',
     subtitle: 'Что подойдет именно вам? Рассказывает отоларинголог клиники - Анатолий Якушев.',
-    img: 'https://lorlor.ru/images/ci1156347v480x320s0.jpg'
+    img: 'https://lorlor.ru/images/ci1156347v480x320s0.jpg',
+    date: '01.01.21'
   },
   {
     title: 'Для чего необходимо слухопротезирование?',
     subtitle: 'Как проходит процедура в нашей клинике? Смотрите в новом ролике.',
-    img: 'https://lorlor.ru/images/ci1156345v480x320s0.jpg'
+    img: 'https://lorlor.ru/images/ci1156345v480x320s0.jpg',
+    date: '01.01.21'
   },
   {
     title: 'Ребенок боится врачей?',
     subtitle: 'Что с этим делать - рассказывает на видео наш оториноларинголог Рагим Садыхов.',
-    img: 'https://lorlor.ru/images/ci1156336v480x320s0.jpg'
+    img: 'https://lorlor.ru/images/ci1156336v480x320s0.jpg',
+    date: '01.01.21'
   },
   {
     title: 'Эпизодически кружится голова?',
     subtitle: 'Какое обследование показано при периодически возникающих головокружениях?',
-    img: 'https://lorlor.ru/images/ci1156318v480x320s0.jpg'
+    img: 'https://lorlor.ru/images/ci1156318v480x320s0.jpg',
+    date: '01.01.21'
   },
   {
     title: 'С нами легко, даже если вы приехали оперироваться из другой страны!',
     subtitle: 'Развенчиваем основные вопросы, которые могут мешать принятию решения.',
-    img: 'https://lorlor.ru/images/ci1156306v480x320s0.jpg'
+    img: 'https://lorlor.ru/images/ci1156306v480x320s0.jpg',
+    date: '01.01.21'
   }, {
     title: 'Не чистите уши при детях!',
     subtitle: 'И другие способы, как НЕ надо чистить уши. Рассказывает на видео эксперт клиники Якушев Анатолий Андреевич.',
-    img: 'https://lorlor.ru/images/ci1156278v480x320s0.jpg'
+    img: 'https://lorlor.ru/images/ci1156278v480x320s0.jpg',
+    date: '01.01.21'
   }, {
     title: 'Когда необходимо делать пункцию?',
     subtitle: 'Об этом рассказал Акопян Карен - отоларинголог клиники.',
-    img: '\thttps://lorlor.ru/images/ci1156277v480x320s0.jpg'
+    img: 'https://lorlor.ru/images/ci1156277v480x320s0.jpg',
+    date: '01.01.21'
   }, {
     title: 'Открытие филиала "Клиники уха, горла и носа" в Сочи состоится 31 июля',
     subtitle: 'Мы открываем новый филиал в городе Сочи.',
-    img: 'https://lorlor.ru/images/ci1156221v480x320s0.jpg'
+    img: 'https://lorlor.ru/images/ci1156221v480x320s0.jpg',
+    date: '01.01.21'
   }, {
     title: 'Капли VS спрей',
     subtitle: 'Что подойдет именно вам? Рассказывает отоларинголог клиники - Анатолий Якушев.',
-    img: 'https://lorlor.ru/images/ci1156148v480x320s0.jpg'
+    img: 'https://lorlor.ru/images/ci1156148v480x320s0.jpg',
+    date: '01.01.21'
   }
 ])
 const articles = ref([
@@ -1782,101 +1794,6 @@ const articles = ref([
 const toggle = (event) => {
   menu.value.toggle(event)
 }
-
-const responsiveOptions = ref([
-
-])
-</script>
-</template>
-<script setup lang="ts">
-import 'public/layout/fonts/roboto/stylesheet.css'
-
-const menuItems = ref([
-  {
-    label: 'Главная'
-  },
-  {
-    label: 'Детский лор'
-  },
-  {
-    label: 'Лор-врачи'
-  },
-  {
-    label: 'Лор-операции'
-  },
-  {
-    label: 'Услуги'
-  },
-  {
-    label: 'Цены'
-  },
-  {
-    label: 'Пациенту',
-    items: [
-      { lable: 'Онлайн-консультация', icon: 'pi pi-fw pi-file' },
-      { lable: 'Тест слуха онлайн' },
-      { lable: 'Вызов врача на дом' },
-      { lable: 'Вызов медсестры на дом' },
-      { lable: 'Акции' },
-      { lable: 'Отзывы' },
-      { lable: 'Второе мнение' },
-      { lable: 'Вопрос-ответ' },
-      { lable: 'Бесплатное лечение' },
-      { lable: 'Прием по ДМС' },
-      { lable: 'Налоговый вычет' },
-      { lable: 'Статьи' },
-      { lable: 'Контроль качества' },
-      { lable: 'Рассрочка' },
-      { lable: 'Подготовка к операции' },
-      { lable: 'Партнеры' }
-    ]
-  },
-  {
-    label: 'Контакты'
-  }
-])
-const loginItems = ref([
-  {
-    label: 'Войти в личный кабинет'
-  },
-  {
-    label: 'Зарегистрироваться'
-  }
-])
-const menu = ref()
-
-const products = ref([
-  {
-    title: 'Поможем услышать мир',
-    subtitle: 'Лучшие лор хирурги',
-    link: 'Узнайне подробнее >>',
-    image: '/img/bg1.jpg'
-  },
-  {
-    title: 'Лор операциo',
-    subtitle: 'Лучшие лор хирурги',
-    link: 'Узнайне подробнее >>',
-    image: '/img/bg2.jpg'
-  }, {
-    title: 'Лор операция',
-    subtitle: 'Лучшие лор хирурги',
-    link: 'Узнайне подробнее >>',
-    image: '/img/bg1.jpg'
-  }, {
-    title: 'Лор операция',
-    subtitle: 'Лучшие лор хирурги',
-    link: 'Узнайне подробнее >>',
-    image: '/img/bg2.jpg'
-  }
-])
-// ///////////////////////////////////////////////////////////////
-
-// //////////////////////////////////////////////////////////////
-
-const responsiveOptions = ref([
-
-])
-
 /// cards object
 const cards = ref([
   {

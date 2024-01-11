@@ -3,10 +3,11 @@ import {useDataStore} from "~/stores/data";
 
 const route = useRoute()
 const dataStore = useDataStore();
-const user = dataStore.items[0]
 const router = useRouter()
 </script>
 
 <template>
-<h1>tem</h1>
+<div class="container">
+  <h1>UserId</h1>
+</div>
 </template>

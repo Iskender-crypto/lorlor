@@ -1,6 +1,7 @@
 .card{
   transition: .2s;
   position: relative;
+  background: white;
   &:hover{
     box-shadow: 5px 5px 5px 10px rgba(222, 220, 220,0.3);
 
@@ -113,4 +114,9 @@
       }
     }
   }
+}
+.card-branch{
+  padding: 20px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }

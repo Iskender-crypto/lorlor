@@ -3,7 +3,9 @@ import {useBreadcrumbStore} from "~/stores/breadcrumb";
 import {useDataStore} from "~/stores/data";
 const breadcrumbStore = useBreadcrumbStore();
 const dataStore = useDataStore();
+
 const router = useRouter();
+
 breadcrumbStore.breadcrumb = [
   {
     label: 'Специалисты',
@@ -54,7 +56,7 @@ breadcrumbStore.breadcrumb = [
         <div class="col-12 lg:col-8">
           <div class="grid ">
             <div v-for="el in dataStore.items" :key="el.id" class="col-12 mb-6">
-              <div @click="router.push(`/doctors/${el.id}`)" class="cursor-pointer card flex-column sm:flex-row flex p-4 bg-white w-full h-full">
+              <div @click="router.push(`/doctors/${el.firstName}`)" class="cursor-pointer card flex-column sm:flex-row flex p-4 bg-white w-full h-full">
                 <div class="card-animation-left" />
                 <div class="">
                   <img class="card-img" :src="el.img" alt="">

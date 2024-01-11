@@ -1,6 +1,6 @@
 // Suggested location to add your overrides so that migration would be easy by just updating the SASS folder in the future
 body{
-  background-color: white;
+  font-family: Arial;
 }
 a {
   outline: none !important;
@@ -15,7 +15,7 @@ button {
   box-shadow: none !important;
 }
 .p-menubar .p-menubar-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover{
-  background-color: transparent;
+
 }
 .p-menuitem-text{
   color: #5e74b7;
@@ -146,4 +146,34 @@ button {
     display: block !important;
   }
 }
+.p-accordion .p-accordion-header:not(.p-highlight):not(.p-disabled):hover .p-accordion-header-link{
+  background: #dee2e6;
+}
+.p-accordion .p-accordion-header:not(.p-disabled).p-highlight:hover .p-accordion-header-link{
+  background: #dee2e6;
+}
+.p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon{
+  display: none;
+}
+.p-accordion-tab .accordion-img {
+  transition: 0.5s;
+}
+.p-accordion-tab-active .accordion-img {
+  transform: rotate(180deg);
+}
 
+.p-accordion .p-accordion-content{
+  padding: 0;
+  background: transparent;
+}
+.p-accordion .p-accordion-header .p-accordion-header-action{
+  background: #dee2e6;
+}
+.p-accordion .p-accordion-header .p-accordion-header-link,.p-accordion .p-accordion-content{
+  border: none !important;
+}
+
+.p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link{
+  background: #dee2e6;
+
+}
